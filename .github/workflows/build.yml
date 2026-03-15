@@ -11,8 +11,6 @@ jobs:
           distribution: 'temurin'
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
-      - name: Unzip project
-        run: unzip StudyReminderV2_SourceCode.zip
       - name: Build APK
         run: |
           cd StudyReminderV2
